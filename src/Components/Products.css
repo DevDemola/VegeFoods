@@ -1,0 +1,131 @@
+.products {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #ffffff, #f7fff9);
+}
+
+/* Header */
+.products-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.products-header span {
+  color: #82ae46;
+  font-family: "Poppins", cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.products-header h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0.6rem 0;
+  color: #1f6b3a;
+  font-weight: 800;
+}
+
+.products-header p {
+  color: #5f7d6a;
+  font-size: 15px;
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+/* Product Card */
+.product-card {
+  position: relative;
+  background: #fff;
+  padding: 2.2rem 1.4rem;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Image */
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Product name */
+.product-card h4 {
+  margin-top: 1.2rem;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #1f6b3a;
+}
+
+/* Price */
+.price {
+  margin-top: 0.7rem;
+  font-size: 15px;
+}
+
+.old {
+  color: #b0b0b0;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.new {
+  color: #82ae46;
+  font-weight: 800;
+}
+
+/* Discount badge */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(135deg, #b4f28b, #82ae46);
+  color: #1f6b3a;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(130, 174, 70, 0.5);
+}
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    padding: 4rem 1.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}

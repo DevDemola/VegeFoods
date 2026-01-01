@@ -1,0 +1,69 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  background: url("bg_2.jpg") center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 0 1.5rem;
+}
+
+/* Headline */
+.hero h1 {
+  color: #f3ffe8;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-family: "Poppins", cursive;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Quote / subtitle */
+.hero p {
+  color: #e9f6ee;
+  margin-top: 1rem;
+  max-width: 650px;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  line-height: 1.7;
+}
+
+/* CTA Button */
+.hero button {
+  margin-top: 2rem;
+  padding: 0.9rem 2.5rem;
+  border-radius: 40px;
+  border: none;
+  background: linear-gradient(135deg, #9fe870, #6bbf59);
+  color: #1f6b3a;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(107, 191, 89, 0.45);
+  transition: all 0.35s ease;
+}
+
+/* Button hover */
+.hero button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(107, 191, 89, 0.65);
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 600px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero button {
+    width: 100%;
+    max-width: 260px;
+  }
+}

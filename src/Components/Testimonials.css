@@ -1,0 +1,130 @@
+.testimony {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #ffffff, #f7fff9);
+}
+
+/* Header */
+.testimony-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.testimony-header span {
+  color: #82ae46;
+  font-family: "Poppins", cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.testimony-header h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0.6rem 0;
+  font-weight: 800;
+  color: #1f6b3a;
+}
+
+.testimony-header p {
+  font-size: 15px;
+  color: #5f7d6a;
+  line-height: 1.6;
+}
+
+/* Grid */
+.testimony-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-align: center;
+}
+
+/* Card */
+.testimony-card {
+  position: relative;
+  padding: 2.5rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.testimony-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Avatar */
+.avatar {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1.6rem;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #eaffd9;
+}
+
+/* Quote icon */
+.quote-icon {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  background: linear-gradient(135deg, #b4f28b, #82ae46);
+  color: #1f6b3a;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(130, 174, 70, 0.45);
+}
+
+/* Message */
+.message {
+  font-size: 14px;
+  color: #5f7d6a;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Accent line */
+.message::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 3px;
+  height: calc(100% - 8px);
+  background: linear-gradient(to bottom, #b4f28b, #82ae46);
+  border-radius: 2px;
+}
+
+/* Name */
+.testimony-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f6b3a;
+}
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+  .testimony-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .testimony {
+    padding: 4rem 1.5rem;
+  }
+
+  .testimony-grid {
+    grid-template-columns: 1fr;
+  }
+}

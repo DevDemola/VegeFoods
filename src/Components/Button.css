@@ -1,0 +1,9 @@
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  background: #6bbf59;
+  color: #fff;
+  cursor: pointer;
+}
