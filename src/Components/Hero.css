@@ -5,11 +5,11 @@
   width: 100%;
   min-height: 100vh;
   background:
-    linear-gradient(
+    /* linear-gradient(
       to bottom,
       rgba(20, 90, 50, 0.55),
       rgba(20, 90, 50, 0.75)
-    ),
+    ), */
     url("/bg_2.jpg") center / cover no-repeat;
 
   display: flex;
@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-/* ================= TEXT ================= */
+
 
 .hero h1 {
   color: #f4ffe8;
