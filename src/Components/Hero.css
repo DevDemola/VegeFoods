@@ -10,7 +10,7 @@
       rgba(20, 90, 50, 0.55),
       rgba(20, 90, 50, 0.75)
     ),
-    url("bg_2.jpg") center / cover no-repeat;
+    url("/bg_2.jpg") center / cover no-repeat;
 
   display: flex;
   flex-direction: column;
